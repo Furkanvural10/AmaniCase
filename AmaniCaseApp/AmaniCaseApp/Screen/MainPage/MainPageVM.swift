@@ -7,6 +7,12 @@
 
 import Foundation
 
+protocol MainPageVMProtocol {
+    var detail: Detail? { get set }
+    var updateViewClosure: (() -> Void)? { get set }
+    func updateDetail(detail: Detail)
+}
+
 final class MainPageVM {
     
     var detail: Detail? {
@@ -23,3 +29,5 @@ final class MainPageVM {
         self.detail = detail
     }
 }
+
+extension MainPageVM: MainPageVMProtocol {}

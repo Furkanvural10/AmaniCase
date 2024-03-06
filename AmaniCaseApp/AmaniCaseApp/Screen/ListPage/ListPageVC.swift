@@ -12,7 +12,7 @@ final class ListPageViewController: UIViewController {
     }()
     
     // MARK: - Properties
-    private var viewModel = ListPageViewModel()
+    var viewModel = ListPageViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

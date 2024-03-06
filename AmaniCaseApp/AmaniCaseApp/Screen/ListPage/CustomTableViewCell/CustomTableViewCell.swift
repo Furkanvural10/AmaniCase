@@ -21,7 +21,7 @@ final class CustomTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    private let cellLabel: UILabel = {
+     let cellLabel: UILabel = {
         let label = UILabel()
         return label
     }()

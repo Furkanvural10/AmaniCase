@@ -12,7 +12,6 @@
 		04523D952B95DD3400C5D0C9 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523D942B95DD3400C5D0C9 /* MainPageVC.swift */; };
 		04523D9A2B95DD3600C5D0C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04523D992B95DD3600C5D0C9 /* Assets.xcassets */; };
 		04523D9D2B95DD3600C5D0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04523D9B2B95DD3600C5D0C9 /* LaunchScreen.storyboard */; };
-		04523DA82B95DD3700C5D0C9 /* AmaniCaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523DA72B95DD3700C5D0C9 /* AmaniCaseAppTests.swift */; };
 		04523DB22B95DD3700C5D0C9 /* AmaniCaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523DB12B95DD3700C5D0C9 /* AmaniCaseAppUITests.swift */; };
 		04523DB42B95DD3700C5D0C9 /* AmaniCaseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523DB32B95DD3700C5D0C9 /* AmaniCaseAppUITestsLaunchTests.swift */; };
 		04523DC12B95E09F00C5D0C9 /* ListPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523DC02B95E09F00C5D0C9 /* ListPageVC.swift */; };
@@ -34,6 +33,13 @@
 		04523E042B97BFFC00C5D0C9 /* ListPageVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E032B97BFFC00C5D0C9 /* ListPageVMTest.swift */; };
 		04523E062B97C6C000C5D0C9 /* DetailPageVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E052B97C6C000C5D0C9 /* DetailPageVMTest.swift */; };
 		04523E092B97CBA300C5D0C9 /* MainPageViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E082B97CBA300C5D0C9 /* MainPageViewControllerTest.swift */; };
+		04523E0B2B98479E00C5D0C9 /* MockMainPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E0A2B98479E00C5D0C9 /* MockMainPageVM.swift */; };
+		04523E122B98567900C5D0C9 /* MockListPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E112B98567900C5D0C9 /* MockListPageVM.swift */; };
+		04523E152B985D0D00C5D0C9 /* CustomTableViewCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E142B985D0D00C5D0C9 /* CustomTableViewCellTest.swift */; };
+		04523E172B985D8200C5D0C9 /* MockTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E162B985D8200C5D0C9 /* MockTableViewDataSource.swift */; };
+		04523E192B985F2600C5D0C9 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E182B985F2600C5D0C9 /* MockNetworkManager.swift */; };
+		04523E1D2B9862E500C5D0C9 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E1C2B9862E500C5D0C9 /* MockURLSession.swift */; };
+		04523E1F2B98632500C5D0C9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04523E1E2B98632500C5D0C9 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +68,6 @@
 		04523D9C2B95DD3600C5D0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04523D9E2B95DD3600C5D0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04523DA32B95DD3700C5D0C9 /* AmaniCaseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaniCaseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04523DA72B95DD3700C5D0C9 /* AmaniCaseAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaniCaseAppTests.swift; sourceTree = "<group>"; };
 		04523DAD2B95DD3700C5D0C9 /* AmaniCaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaniCaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04523DB12B95DD3700C5D0C9 /* AmaniCaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaniCaseAppUITests.swift; sourceTree = "<group>"; };
 		04523DB32B95DD3700C5D0C9 /* AmaniCaseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaniCaseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -83,6 +88,13 @@
 		04523E032B97BFFC00C5D0C9 /* ListPageVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPageVMTest.swift; sourceTree = "<group>"; };
 		04523E052B97C6C000C5D0C9 /* DetailPageVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageVMTest.swift; sourceTree = "<group>"; };
 		04523E082B97CBA300C5D0C9 /* MainPageViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewControllerTest.swift; sourceTree = "<group>"; };
+		04523E0A2B98479E00C5D0C9 /* MockMainPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainPageVM.swift; sourceTree = "<group>"; };
+		04523E112B98567900C5D0C9 /* MockListPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListPageVM.swift; sourceTree = "<group>"; };
+		04523E142B985D0D00C5D0C9 /* CustomTableViewCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellTest.swift; sourceTree = "<group>"; };
+		04523E162B985D8200C5D0C9 /* MockTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableViewDataSource.swift; sourceTree = "<group>"; };
+		04523E182B985F2600C5D0C9 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		04523E1C2B9862E500C5D0C9 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		04523E1E2B98632500C5D0C9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +161,11 @@
 		04523DA62B95DD3700C5D0C9 /* AmaniCaseAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				04523E132B985CFD00C5D0C9 /* TableView */,
+				04523E0C2B9850F400C5D0C9 /* Mock */,
 				04523E072B97CAEF00C5D0C9 /* ViewController */,
 				04523DFF2B97B5F400C5D0C9 /* ViewModel */,
 				04523DE92B97A96700C5D0C9 /* Service */,
-				04523DA72B95DD3700C5D0C9 /* AmaniCaseAppTests.swift */,
 			);
 			path = AmaniCaseAppTests;
 			sourceTree = "<group>";
@@ -268,6 +281,7 @@
 		04523DE92B97A96700C5D0C9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				04523E202B98675500C5D0C9 /* NetoworkManager */,
 				04523E002B97BFB100C5D0C9 /* UserRequestContent */,
 				04523DE82B97A76F00C5D0C9 /* Helper */,
 			);
@@ -305,6 +319,34 @@
 				04523E082B97CBA300C5D0C9 /* MainPageViewControllerTest.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04523E0C2B9850F400C5D0C9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				04523E0A2B98479E00C5D0C9 /* MockMainPageVM.swift */,
+				04523E112B98567900C5D0C9 /* MockListPageVM.swift */,
+				04523E162B985D8200C5D0C9 /* MockTableViewDataSource.swift */,
+				04523E182B985F2600C5D0C9 /* MockNetworkManager.swift */,
+				04523E1C2B9862E500C5D0C9 /* MockURLSession.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		04523E132B985CFD00C5D0C9 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				04523E142B985D0D00C5D0C9 /* CustomTableViewCellTest.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		04523E202B98675500C5D0C9 /* NetoworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				04523E1E2B98632500C5D0C9 /* NetworkManager.swift */,
+			);
+			path = NetoworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,12 +508,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04523E1D2B9862E500C5D0C9 /* MockURLSession.swift in Sources */,
 				04523DE72B97A63B00C5D0C9 /* EndPointTest.swift in Sources */,
 				04523DFE2B97B5D100C5D0C9 /* MainPageVMTest.swift in Sources */,
+				04523E1F2B98632500C5D0C9 /* NetworkManager.swift in Sources */,
 				04523E062B97C6C000C5D0C9 /* DetailPageVMTest.swift in Sources */,
 				04523E022B97BFCA00C5D0C9 /* UserRequestContent.swift in Sources */,
+				04523E192B985F2600C5D0C9 /* MockNetworkManager.swift in Sources */,
 				04523E042B97BFFC00C5D0C9 /* ListPageVMTest.swift in Sources */,
-				04523DA82B95DD3700C5D0C9 /* AmaniCaseAppTests.swift in Sources */,
+				04523E122B98567900C5D0C9 /* MockListPageVM.swift in Sources */,
+				04523E172B985D8200C5D0C9 /* MockTableViewDataSource.swift in Sources */,
+				04523E0B2B98479E00C5D0C9 /* MockMainPageVM.swift in Sources */,
+				04523E152B985D0D00C5D0C9 /* CustomTableViewCellTest.swift in Sources */,
 				04523E092B97CBA300C5D0C9 /* MainPageViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

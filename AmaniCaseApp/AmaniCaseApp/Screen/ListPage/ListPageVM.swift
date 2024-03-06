@@ -12,6 +12,7 @@ protocol ListPageViewModelProtocol {
 }
 
 final class ListPageViewModel {
+    
     var details: [Detail] = []
     var errorMessage: String?
     

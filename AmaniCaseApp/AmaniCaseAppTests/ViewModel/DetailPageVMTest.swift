@@ -17,7 +17,7 @@ final class DetailPageVMTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        validURLString = "https://example.com/image.png"
+        validURLString = "https://example1.com/image.png"
         invalidURLString = "invalidURL"
     }
     

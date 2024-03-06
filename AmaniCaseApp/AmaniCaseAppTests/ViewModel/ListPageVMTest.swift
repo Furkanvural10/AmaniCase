@@ -18,6 +18,7 @@ final class ListPageViewModelTests: XCTestCase {
         super.setUp()
         mockUserRequestContent = MockUserRequestContent()
         sut = ListPageViewModel(userRequestContent: mockUserRequestContent)
+        
     }
 
     override func tearDown() {
@@ -28,7 +29,6 @@ final class ListPageViewModelTests: XCTestCase {
 
     func test_FetchUserContentsCallsUserRequestContent() {
         sut.fetchUserContents {}
-        
         XCTAssertTrue(mockUserRequestContent.fetchUserContentsCalled)
     }
 
@@ -55,4 +55,9 @@ final class ListPageViewModelTests: XCTestCase {
         mockUserRequestContent.completeWithError(error: .invalidData)
         waitForExpectations(timeout: 1, handler: nil)
     }
+}
+
+protocol ListPageViewModelProtocol {
+    var details: [Detail] { get }
+    func fetchUserContents(completion: @escaping () -> Void)
 }

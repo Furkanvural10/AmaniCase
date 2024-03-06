@@ -10,9 +10,9 @@ import UIKit
 final class MainPageViewController: UIViewController {
     
     // MARK: - Prop.
-    private let viewModel = MainPageVM()
-    private var titleLabel: UILabel!
-    private var idLabel: UILabel!
+    var viewModel: MainPageVMProtocol = MainPageVM()
+    var titleLabel: UILabel!
+    var idLabel: UILabel!
     
     // MARK: - Lifecycle M.
     override func viewDidLoad() {

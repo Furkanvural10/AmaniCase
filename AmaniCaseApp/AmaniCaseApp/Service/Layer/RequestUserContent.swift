@@ -12,16 +12,19 @@ protocol UserRequestContentProtocol {
 }
 
 final class UserRequestContent {
-    private init() {}
+    
+    private let networkManager: NetworkManagerProtocol
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+        self.networkManager = networkManager
+    }
 }
 
 extension UserRequestContent: UserRequestContentProtocol {
     
     static let shared = UserRequestContent()
     
-    
     func getUserContentData(completion: @escaping (Result<UserContent, NetworkError>) -> Void) {
         let endPoint = EndPoint.getData
-        NetworkManager.shared.request(endPoint, completion: completion)
+        networkManager.request(endPoint, completion: completion)
     }
 }
